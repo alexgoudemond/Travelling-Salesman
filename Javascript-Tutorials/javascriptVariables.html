@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+        <title>Javascript Variables!</title>
+    </head>
+
+    <body>
+        
+        <script>
+            var thisIsAString = 'This is a string';
+            var alsoAString = '25';
+            var isANumber = 25;
+            var isEqual = (alsoAString==isANumber);  // This is true, they are both 25.
+            var isEqual = (alsoAString===isANumber); // False one is a number, the other a string.
+            var concat=alsoAString + isANumber;      // concat is now 2525
+            addition=isANumber + isANumber;          // addition is now 50
+            alsoANumber=3.05;                        // is equal to 3.05 (usually).
+            floatError=0.06+0.01;                    // is equal to 0.06999999999999999
+            anExponent=1.23e+3;                      // is equal to 1230
+            hexadecimal = 0xff;                      // is equal to 255.
+            octal = 0377;                            // is equal to 255.
+            isTrue = true;                           // This is a boolean, it can be true or false.
+            isFalse= false;                          // This is a boolean, it can be true or false
+            isArray = [0, 'one', 2, 3, '4', 5];      // This is an array.
+            
+            four = isArray[4];  // assign a single array element to a variable.
+                                // in this case four = '4'
+
+            var isObject = {    'color': 'blue', // This is a Javascript object
+                                'dog': 'bark',
+                                'array': [0,1,2,3,4,5],
+                                'myfunc': function () { alert('do something!'); }
+                            }
+
+            var dog = isObject.dog; // dog now stores the string 'bark';
+            isObject.myfunc();      // creates an alert box with the value "do something!"
+            var someFunction =  function() {
+                                    return "I am a function!";
+                                }   
+            var alsoAFunction = someFunction;   //No () so alsoAFunction becomes a function
+            var result = alsoAFunction();       // alsoAFunction is executed here because ()
+                                                // executes the function so result stores the
+                                                // return value of the function which is
+                                                // "I am a function!"
+        </script>
+    </body>
+
+    
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My First Javascript</title>
+    </head>
+    <body>
+    Hello World!
+        <p>Say what? <input id="sayThis" size=40>
+        <P>How many times? 
+            <select id='howMany'>
+                <option value=1>1</option>
+                <option value=5 selected>5</option>
+                <option value=10>10</option>
+                <option value=20>20</option>
+            </select>
+        <p><button onClick='doLoop()'>Do It!</button>
+        <p><div id="results"></div>
+    </body>
+
+    <script type='text/javascript'>
+        function doLoop() {
+            var sayWhat = document.getElementById('sayThis').value;
+            var maxLoop = document.getElementById('howMany').value;
+            var str = ''; // where we'll store our output temporarily.
+            
+            for (var i=1; (i<=maxLoop); i++) {
+                str=str+i+':'+sayWhat+'<br>';
+            }
+            document.getElementById("results").innerHTML=str;
+        }
+    </script>
+
+    <div id="example" onClick="colorize()">
+        Click on this text to change the background color
+    </div>
+    <script type='text/javascript'>
+        function colorize() {
+            var element = document.getElementById("example");
+            element.style.backgroundColor='#800';
+            element.style.color='white';
+            element.style.textAlign='center';
+        }
+    </script>
+</html>

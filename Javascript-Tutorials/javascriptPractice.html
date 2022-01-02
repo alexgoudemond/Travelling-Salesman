@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <title>Learning Javascript!</title>
+    </head>
+
+    <body>
+        <!--    Below is 3 ways to push message to user -->
+        <!-- <div id='feedback'></div>
+
+        <script type='text/Javascript'>
+            //sample code
+            // document.writeln('Hello World!');
+            // alert('Hello World!')
+            text = '<P><font color=red>Hello World!</font>';
+            // text = "Okay Then";
+            document.getElementById('feedback').innerHTML=text;
+        </script> -->
+
+        <!--    Below is how update HTML blocks -->
+        <!-- <div id='feedback' onClick='goodbye()'>Users without Javascript see this.</div>
+
+        <script type='text/javascript'>
+            document.getElementById('feedback').innerHTML='Hello World! Click Me';
+
+            function goodbye() {
+                document.getElementById('feedback').innerHTML='Goodbye World!';
+            }
+        </script> -->
+
+        <!--    Below is how to get input from user-->
+        <!-- <input id='userInput' size=60> <button onClick='userSubmit()'>Submit</button>
+        <BR>
+        <P><div id='result'></div>
+
+        <script type='text/javascript'>
+
+            function userSubmit() {
+                var UI=document.getElementById('userInput').value;
+                document.getElementById('result').innerHTML='You typed: '+UI;
+            }
+        </script> -->
+
+        <!--    Below is how to get input from user using onKeyUp-->
+        <input id='userInput' onKeyUp='userSubmit()' size=60> 
+        <BR>
+        <P><div id='result'></div>
+
+        <script type='text/javascript'>
+
+            function userSubmit() {
+                var UI=document.getElementById('userInput').value;
+                document.getElementById('result').innerHTML='You typed: '+UI;
+            }
+        </script>
+        
+    </body>
+
+    
+
+</html>
