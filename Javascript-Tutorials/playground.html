@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    Catch The Mouse!
+</head>
+
+<body>
+    <p>You are a cat! Try catch the critter below by hovering over it:</p><br>
+
+    <div id='pathway'>
+        <p style="text-align:right;">
+            <img onmouseover='moveMouseCenter()' src='mouseSmirk.jpg' width=140>
+        </p>
+    </div>
+
+    <script type='text/Javascript'>
+
+        var text = '';
+
+        function moveMouseLeft(){
+            text = '<p style="text-align:top;"><img onmouseover=\'moveMouseRight()\' src=\'mouseOoh.jpg\' width=140></p>'
+            document.getElementById('pathway').innerHTML=text;
+        }
+        function moveMouseRight(){
+            text = '<p style="text-align:right;"><img onmouseover=\'moveMouseDown()\' src=\'mouseSmirk.jpg\' width=140></p>'
+            document.getElementById('pathway').innerHTML=text;
+        }
+        function moveMouseCenter(){
+            text = '<p style="text-align:center;"><img onmouseover=\'moveMouseLeft()\' src=\'mouseCheese.jpg\' width=140></p>'
+            document.getElementById('pathway').innerHTML=text;
+        }
+        function moveMouseDown(){
+            text = '<br><br><br><br><br><br><br><br><br><p style="text-align:center;"><img onmouseover=\'moveMouseCenter()\' src=\'mouseSmirk.jpg\' width=140></p>'
+            document.getElementById('pathway').innerHTML=text;
+        }
+
+    </script>
+</body>
+
+</html>
