@@ -1,3 +1,7 @@
-body{
-    background: rgb(95, 121, 209);
+body {
+    /*Vars Below*/
+    --background-color: rgb(89, 111, 184);
+    ;
+    /*Vars Above*/
+    background: var(--background-color, blue);
 }

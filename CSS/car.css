@@ -1,0 +1,118 @@
+    .car {
+        /*Vars Below*/
+        --car-size: 800px;
+        --car-height: 200px;
+        --car-color: rgb(185, 25, 25);
+        --wheel-size: 130px;
+        --wheel-gap: 150px;
+        --wheel-color: black;
+        --picture-frame-color: var(--background-color, blue);
+        /*Vars Above*/
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: var(--car-size, 300px);
+        height: var(--car-size, 300px);
+    }
+    
+    .picture-frame {
+        background: var(--picture-frame-color, white);
+        width: var(--car-size, 400px);
+        height: var(--car-height, 200px);
+        border-radius: 0% 0% 0% 0%;
+        padding: 20%;
+        margin: 0%;
+    }
+    
+    .engine {
+        position: relative;
+        top: 60%;
+        left: -5%;
+        background: var(--car-color, red);
+        width: 80%;
+        height: 88%;
+        border-radius: 85% 0% 0% 20%;
+    }
+    
+    .car-top {
+        position: relative;
+        top: -100%;
+        left: 30%;
+        background: var(--car-color, red);
+        /* background: green; */
+        width: 40%;
+        height: 80%;
+        border-radius: 100% 0% 0% 0%;
+    }
+    
+    .car-back {
+        position: relative;
+        top: -180%;
+        left: 70%;
+        background: var(--car-color, green);
+        width: 35%;
+        height: 160%;
+        border-radius: 0% 30% 30% 0%;
+    }
+    
+    .car-center {
+        position: relative;
+        top: -260%;
+        left: 30%;
+        background: var(--car-color, red);
+        width: 43%;
+        height: 80%;
+        border-radius: 0% 0% 0% 0%;
+    }
+    
+    .left-wheel-gap {
+        position: absolute;
+        top: 47%;
+        left: 28.5%;
+        background: var(--picture-frame-color, white);
+        width: var(--wheel-size-gap, 150px);
+        height: var(--wheel-size-gap, 150px);
+        border-radius: 50% 50% 50% 50%;
+    }
+    
+    .right-wheel-gap {
+        position: absolute;
+        top: 47%;
+        left: 95.5%;
+        background: var(--picture-frame-color, white);
+        /* background-color: green; */
+        width: var(--wheel-size-gap, 150px);
+        height: var(--wheel-size-gap, 150px);
+        border-radius: 50% 50% 50% 50%;
+    }
+    
+    .left-wheel {
+        position: absolute;
+        top: 49%;
+        left: 30%;
+        background: var(--wheel-color, black);
+        width: var(--wheel-size, 130px);
+        height: var(--wheel-size, 130px);
+        border-radius: 50% 50% 50% 50%;
+    }
+    
+    .right-wheel {
+        position: absolute;
+        top: 49%;
+        left: 97%;
+        background: var(--wheel-color, black);
+        width: var(--wheel-size, 130px);
+        height: var(--wheel-size, 130px);
+        border-radius: 50% 50% 50% 50%;
+    }
+    
+    .blank {
+        position: relative;
+        top: 0%;
+        bottom: 0%;
+        background: var(--car-color, red);
+        width: 50%;
+        height: 50%;
+        border-radius: 0% 0% 0% 0%;
+    }
