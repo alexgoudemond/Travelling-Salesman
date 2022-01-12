@@ -5,41 +5,54 @@
     --temporary-color-2: rgb(54, 200, 54);
 }
 
+.center {
+    margin: auto;
+    width: 40%;
+    border: 3px solid transparent;
+    padding: 10px;
+}
+
 body {
     background: var(--background-color, blue);
+    text-align: center;
+    margin: auto;
+    transform: scale(1.5);
+    position: relative;
 }
 
 #car-block {
     background-color: var(--temporary-color-1, orange);
-    width: 200px;
-    position: relative;
-    left: 43%;
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 10%;
 }
 
 #explanation-block {
     background-color: var(--temporary-color-2, orange);
-    position: relative;
-    width: 1000px;
-    left: 9%;
+    position: absolute;
+    width: 800px;
+    top: 200px;
 }
 
 #cartesian-plane-block {
     background-color: var(--temporary-color-1, orange);
     width: 600px;
-    position: relative;
-    left: 25%;
+    height: 300px;
+    position: absolute;
+    top: 240px;
 }
 
 #button-block {
     background-color: var(--temporary-color-2, orange);
     width: 800px;
-    position: relative;
-    left: 17%;
+    position: absolute;
+    top: 560px;
 }
 
 #solution-block {
     background-color: var(--temporary-color-1, orange);
     width: 600px;
-    position: relative;
-    left: 25%;
+    position: absolute;
+    top: 600px;
 }
