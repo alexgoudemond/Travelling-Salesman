@@ -1,7 +1,45 @@
-body {
-    /*Vars Below*/
+:root {
     --background-color: rgb(89, 111, 184);
-    ;
-    /*Vars Above*/
+    --background-color: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+    --temporary-color-1: rgb(218, 124, 18);
+    --temporary-color-2: rgb(54, 200, 54);
+}
+
+body {
     background: var(--background-color, blue);
+}
+
+#car-block {
+    background-color: var(--temporary-color-1, orange);
+    width: 200px;
+    position: relative;
+    left: 43%;
+}
+
+#explanation-block {
+    background-color: var(--temporary-color-2, orange);
+    position: relative;
+    width: 1000px;
+    left: 9%;
+}
+
+#cartesian-plane-block {
+    background-color: var(--temporary-color-1, orange);
+    width: 600px;
+    position: relative;
+    left: 25%;
+}
+
+#button-block {
+    background-color: var(--temporary-color-2, orange);
+    width: 800px;
+    position: relative;
+    left: 17%;
+}
+
+#solution-block {
+    background-color: var(--temporary-color-1, orange);
+    width: 600px;
+    position: relative;
+    left: 25%;
 }
