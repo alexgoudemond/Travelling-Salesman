@@ -7,8 +7,8 @@
 
 .center {
     margin: auto;
-    width: 40%;
-    border: 3px solid transparent;
+    width: 80%;
+    border: 3px transparent;
     padding: 10px;
 }
 
@@ -16,43 +16,49 @@ body {
     background: var(--background-color, blue);
     text-align: center;
     margin: auto;
-    transform: scale(1.5);
+    transform: scale(1);
     position: relative;
+    font-size: 25px;
 }
 
 #car-block {
     background-color: var(--temporary-color-1, orange);
-    width: 300px;
-    height: 180px;
-    position: absolute;
+    margin: auto;
+    width: 80%;
+    height: 200px;
+    position: relative;
     top: 10%;
 }
 
 #explanation-block {
+    margin: auto;
     background-color: var(--temporary-color-2, orange);
-    position: absolute;
-    width: 800px;
-    top: 200px;
+    position: relative;
+    width: 80%;
+    /* top: 200px; */
 }
 
 #cartesian-plane-block {
+    margin: auto;
     background-color: var(--temporary-color-1, orange);
-    width: 600px;
+    width: 80%;
     height: 300px;
-    position: absolute;
-    top: 240px;
+    position: relative;
+    /* top: 240px; */
 }
 
 #button-block {
+    margin: auto;
     background-color: var(--temporary-color-2, orange);
-    width: 800px;
-    position: absolute;
-    top: 560px;
+    width: 77.5%;
+    position: relative;
+    /* top: 560px; */
 }
 
 #solution-block {
+    margin: auto;
     background-color: var(--temporary-color-1, orange);
-    width: 600px;
-    position: absolute;
-    top: 600px;
+    width: 80%;
+    position: relative;
+    /* top: 600px; */
 }

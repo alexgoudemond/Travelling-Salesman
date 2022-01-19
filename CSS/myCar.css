@@ -8,6 +8,11 @@ Here we want to create a simple car, with rotating wheels!
     --wheel-color: black;
 }
 
+.car {
+    position: absolute;
+    margin-top: -5px;
+}
+
 .carBody {
     position: absolute;
     top: 70px;
