@@ -5,12 +5,13 @@ Here we want to create a simple car, with rotating wheels!
 :root {
     --car-color: rgb(236, 34, 34);
     --temporary-color-2: rgb(54, 200, 54);
+    --background-color: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
     --wheel-color: black;
 }
 
 .car {
     position: absolute;
-    margin-top: -5px;
+    margin-top: -20px;
 }
 
 .carBody {
@@ -204,5 +205,134 @@ Here we want to create a simple car, with rotating wheels!
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+/* 
+The code below is for the road of the car, 
+it will be invoked before the car is 
+*/
+
+.road {
+    position: absolute;
+    margin-top: 60px;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    background-color: rgb(51, 49, 49);
+    height: 70px;
+    width: 100%;
+    border-radius: 0%;
+    transform: rotate(0deg);
+}
+
+.road-line {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    background: var(--background-color, blue);
+    height: 10px;
+    width: 60px;
+    border-radius: 0%;
+    transform: rotate(0deg);
+}
+
+.offset-1 {
+    left: 10%;
+    animation-name: individual-road-line-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.offset-2 {
+    left: 30%;
+    animation-name: individual-road-line-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.offset-3 {
+    left: 50%;
+    animation-name: individual-road-line-3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.offset-4 {
+    left: 70%;
+    animation-name: individual-road-line-4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.offset-5 {
+    left: 90%;
+    animation-name: individual-road-line-5;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.offset-6 {
+    left: 110%;
+    animation-name: individual-road-line-6;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes individual-road-line-1 {
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: -10%;
+    }
+}
+
+@keyframes individual-road-line-2 {
+    0% {
+        left: 30%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes individual-road-line-3 {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+@keyframes individual-road-line-4 {
+    0% {
+        left: 70%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes individual-road-line-5 {
+    0% {
+        left: 90%;
+    }
+    100% {
+        left: 70%;
+    }
+}
+
+@keyframes individual-road-line-6 {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: 90%;
     }
 }
