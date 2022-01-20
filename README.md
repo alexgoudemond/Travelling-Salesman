@@ -23,3 +23,9 @@ A quick glance online suggests: Brute-Force (I will avoid this), Branch-and-Boun
     It would be dope if the graph danced as paths were explored... How much work to make this possible?
         This is the fun part I really want to implement!
 -->
+
+Update: I have been completing tutorials on FreeCodeCamp, as I felt I needed to be exposed to more information before throwing myself in. Im almost done the first tutorial (Responsive Web Development) and this has allowed me to animate a simple car, with some CSS shapes and movements.
+
+I plan on finishing this set of tutorials, then reevaluating.
+
+I found resources online looking at Javascript to help fetch coordinates from a <div>, on click. It used canvas. Ill look there when I am done with this tutorial
